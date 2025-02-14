@@ -1,48 +1,47 @@
 # FetchRecipeApp
 
 ### Summary: 
-Clean, organized TabBar interface for easy navigation
-Each recipe displays with a thumbnail image and name
-Integrated search bar for real-time recipe filtering
-Smooth transitions and loading states between views  
+Clean, organized TabBar interface for easy navigation.
+Each recipe displays with a thumbnail image and name.
+Integrated search bar for real-time recipe filtering. 
 ![Screenshot 2025-02-13 at 11 49 15 PM](https://github.com/user-attachments/assets/f5a66a4d-5602-40a8-bb36-3b48fc7e3a5d)
 
-Full-size recipe image with custom styling
-Interactive favorite system with animated triple-heart design
-Embedded YouTube video player for recipe instructions
-Direct link to source recipe for additional information
-Navigation bar displaying both recipe name and cuisine type
+Full-size recipe image with custom styling.
+Interactive favorite system with animated triple-heart design.
+Embedded YouTube video player for recipe instructions.
+Direct link to source recipe for additional information.
+Navigation bar displaying both recipe name and cuisine type.
 ![Screenshot 2025-02-13 at 11 51 50 PM](https://github.com/user-attachments/assets/3ddddc00-6848-46ae-bf0e-bd54414681f6)
 
 
-Dedicated tab for saved recipes
-Persistent storage of user favorites
-Swipe-to-delete functionality for easy list management
-Empty state handling with helpful user guidance
-Maintains visual consistency with main recipe list 
+Dedicated tab for saved recipes.
+Persistent storage of user favorites.
+Swipe-to-delete functionality for easy list management.
+Empty state handling with helpful user guidance.
+Maintains visual consistency with main recipe list. 
 ![Screenshot 2025-02-13 at 11 55 10 PM](https://github.com/user-attachments/assets/f2aab46d-7ae3-455b-a936-8b4c6199e746)
 
 ### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
 I focused on three core areas:
 
 Robust Data Management -
-Implemented efficient data fetching and caching for both JSON data and images
-Created a clear separation between raw API data (Recipe) and presentation models (ConvertedRecipe)
-Built defensive error handling to ensure a smooth user experience even under poor network conditions
+Implemented efficient data fetching and caching for both JSON data and images.
+Created a clear separation between raw API data (Recipe) and presentation models (ConvertedRecipe).
+Built defensive error handling to ensure a smooth user experience even under poor network conditions.
 
 
 Architecture and Code Quality -
-Structured the app using MVVM pattern to maintain clear separation of concerns
-Designed reusable components like the custom TabBarView and YouTubeView
-Created well-organized, single-responsibility methods in the ViewModel
-Used Swift's modern features like @Observable and async/await for clean, maintainable code
+Structured the app using MVVM pattern to maintain clear separation of concerns.
+Designed reusable components like the custom TabBarView and YouTubeView.
+Created well-organized, single-responsibility methods in the ViewModel.
+Used Swift's modern features like @Observable and async/await for clean, maintainable code.
 
 
 User Experience and Performance -
-Implemented immediate UI feedback with loading states
-Added practical features like search and favorites that enhance usability
-Built efficient image caching to prevent unnecessary network calls
-Ensured smooth transitions and animations throughout the app
+Implemented immediate UI feedback with loading states.
+Added practical features like search and favorites that enhance usability.
+Built efficient image caching to prevent unnecessary network calls.
+Ensured smooth transitions and animations throughout the app.
 
 I prioritized these areas because they represent the foundation of a scalable, maintainable application that provides real value to users while demonstrating strong iOS development practices.
 
@@ -50,34 +49,32 @@ I prioritized these areas because they represent the foundation of a scalable, m
 I spent approximately 8 hours on this project, with time allocated across several key development phases:
 
 Data Layer Foundation (1.5 hours) -
-Set up and validated JSON data fetching
-Designed and implemented data models (Recipe and ConvertedRecipe)
-Built robust error handling for network requests
+Set up and validated JSON data fetching.
+Designed and implemented data models (Recipe and ConvertedRecipe).
+Built robust error handling for network requests.
 
 
 Core Architecture (2 hours) -
-Developed the ViewModel with MVVM pattern
-Implemented image caching system
-Created the base navigation structure
+Developed the ViewModel with MVVM pattern.
+Implemented image caching system.
+Created the base navigation structure.
 
 Essential UI Implementation (2.5 hours) -
-Built main recipe list view with thumbnail images
-Developed detailed recipe view with YouTube integration
-Added loading screen with animations
-Ensured smooth navigation flow
-
+Built main recipe list view with thumbnail images.
+Developed detailed recipe view with YouTube integration.
+Added loading screen with animations.
+Ensured smooth navigation flow.
 
 Enhanced Features (2 hours) -
-Implemented search functionality with real-time filtering
-Added favorites system with persistent state
-Created swipe-to-delete functionality for favorites
-Added UI polish like custom animations and loading states
+Implemented search functionality with real-time filtering.
+Added favorites system with persistent state.
+Created swipe-to-delete functionality for favorites.
+Added UI polish like custom animations and loading states.
 
 I chose to implement additional features like search and favorites because they demonstrate practical iOS development patterns (state management, filtering, user preferences).
-They enhance the user experience significantly.
 They showcase my ability to think beyond basic requirements while maintaining code quality.
 
-The project emphasizes clean architecture, efficient data handling, and a polished user experience, which I believe are crucial for production-ready applications.
+The project shows clean architecture, efficient data handling, and a polished user experience, which I believe are crucial for production-ready applications.
 
 ### Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
 In developing this app, I made a conscious choice to focus on functionality over fancy design elements. While the app might not win any beauty contests with its out-of-the-box Apple styling, this decision let me concentrate on what I believe really matters - creating a solid, well-built app that runs smoothly and handles data efficiently. 
