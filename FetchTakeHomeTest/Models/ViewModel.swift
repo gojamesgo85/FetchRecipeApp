@@ -8,7 +8,7 @@
 import SwiftUI
 
 @Observable
-class ViewModel: ObservableObject {
+final class ViewModel: ObservableObject {
     
 
     var storedRecipes: [Recipe] = []
@@ -45,7 +45,7 @@ class ViewModel: ObservableObject {
         isLoading = false
     }
     
-    func convertImage(for imageToConvert: String) async -> UIImage {
+    private func convertImage(for imageToConvert: String) async -> UIImage {
         var returnImage = UIImage()
         let imageTask = Task {
             var imageData = Data()
@@ -67,7 +67,7 @@ class ViewModel: ObservableObject {
         return returnImage
     }
     
-    func cacheRecipeImages() async  {
+    private func cacheRecipeImages() async  {
         for recipe in storedRecipes {
             if let validURL = recipe.youtubeUrl {
                 convertedRecipes.append(ConvertedRecipe(id: UUID(),
@@ -82,7 +82,7 @@ class ViewModel: ObservableObject {
         }
     }
     
-    func searchResults() -> [ConvertedRecipe] {
+     func searchResults() -> [ConvertedRecipe] {
         if searchText.isEmpty {
             return convertedRecipes
         } else {
